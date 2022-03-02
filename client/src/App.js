@@ -12,6 +12,7 @@ import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import NewProduct from "./pages/newProduct/NewProduct";
 import NewUser from "./pages/newUser/NewUser";
+import Product from "./pages/product/Product";
 import ProductList from "./pages/productList/ProductList";
 import User from "./pages/user/User";
 import UserList from "./pages/userList/UserList";
@@ -39,6 +40,7 @@ function App() {
             <Route path="/userList" element={<UserList/>} />
             <Route path="/productList" element={<ProductList/>} />
             <Route path="/newProduct" element={<NewProduct/>} />
+            <Route path="/products/:productId" element={<Product />} />
           </Routes>
         </div>
       </>
